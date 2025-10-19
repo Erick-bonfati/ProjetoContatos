@@ -10,13 +10,13 @@
       <h1 class="text-center">Login</h1>
       <p class="text-center lead">Faca login ou crie sua conta abaixo</p>
 
+      <%- include('includes/messages') %>
+
         <div class="row">
             <div class="col-lg">
                 <h4>Faca seu cadastro</h4>
                 <p>Crie sua conta e gerencie seus contatos</p>
                 
-                <%- include('includes/messages') %>
-
                 <form action="/login/register" method="POST">
                     <input type="hidden" name="_csrf" value="<%= csrfToken %>">
                     <div class="form-group mb-3">
